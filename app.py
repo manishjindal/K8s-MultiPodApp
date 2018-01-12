@@ -13,7 +13,7 @@ import subprocess
 
 app = Flask(__name__)
 startTime = datetime.now()
-db = MySQLdb.connect("127.0.0.1","root","password")
+db = MySQLdb.connect("mysql","root","password")
 cursor = db.cursor()
 
 @app.route('/')
