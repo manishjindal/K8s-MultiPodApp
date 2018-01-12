@@ -1,6 +1,10 @@
- 
+# 
+* Create Image and push to dockerhub
+* Create seperate pod for database
+* create multi container pod for app (app+redis)
+* first run db pod 
+* Next run application pod
 
-./kubectl.exe create -f /D/Learning/kubernetes/Examples/4-MultiContainer/RegistrationApp/Deploy/web-pod.yml
+OR
 
-./kubectl.exe create -f /D/Learning/kubernetes/Examples/4-MultiContainer/RegistrationApp/Deploy/web-svc.yml
-
+Use allInOne.yml which will take care of running applciation and will give the final url

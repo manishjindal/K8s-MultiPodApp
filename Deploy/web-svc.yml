@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myflask-web
+  name: web
   labels:
-    name: myflask
-    app: myflask-demo
+    name: web
+    app: demo
 spec:
   selector:
-    name: multicontainer-myflask
+    name: web 
   type: NodePort
   ports:
    - port: 80

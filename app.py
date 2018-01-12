@@ -58,7 +58,7 @@ def get_users(uid):
     if data:
         return render_template('users.html',id=data[0], name=data[1], contact=data[2], game_type=data[3])
     else:
-        return "Record not found for passed id dd"
+        return "User doesn't exist for given ID!"
 
 @app.route('/users/edit/<uid>')
 def edit_users(uid):
@@ -91,7 +91,7 @@ def get_all_users():
     if data:
         return render_template('all_users.html', data=data)
     else:
-        return "No Record Found!"
+        return "No Records in the database!"
 
 
 if __name__ == "__main__":

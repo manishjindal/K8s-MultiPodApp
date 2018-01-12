@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <style type="text/css">
@@ -7,14 +8,14 @@
       }
       .container {
          max-width: 900px;
-         margin: 100px auto;
+         margin: 50px auto;
          border: 2px solid black;
          
          text-align: center;
       }
       .table {
          
-         margin: 100px auto;
+         margin: 50px auto;
          width: 100%;
          text-align: center;
       }
@@ -27,7 +28,14 @@
     </style>
   </head>
   <body background="http://freeimagescollection.com/images/objects/stag-table-tennis-yellow-ball-and-racket-f4.jpg">
-    <div class="container">
+  
+  <div class="container">
+      <table border="1" class="table">
+        <tr>
+          <th><a href="/">Register</th></a>
+          <th><a href="/users/all">All Entries</th></a>
+        </tr>
+      </table>
       <h4>Edit User</h4>
       <form action="/users/update/{{id}}" method="post"> 
       <table border="1" class="table">
